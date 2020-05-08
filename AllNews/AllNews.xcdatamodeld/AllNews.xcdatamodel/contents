@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Article" representedClassName="Article" syncable="YES" codeGenerationType="class">
+        <attribute name="articleDescription" optional="YES" attributeType="String"/>
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="publishedAt" attributeType="String" defaultValueString=""/>
+        <attribute name="sourceName" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String" defaultValueString=""/>
+        <attribute name="url" attributeType="String" defaultValueString=""/>
+        <attribute name="urlToImage" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="url"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="SourceEntity" representedClassName="SourceEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="String" defaultValueString=""/>
+        <attribute name="language" attributeType="String" defaultValueString=""/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="SourceEntity" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="Article" positionX="137.90625" positionY="117.75390625" width="128" height="163"/>
+    </elements>
 </model>

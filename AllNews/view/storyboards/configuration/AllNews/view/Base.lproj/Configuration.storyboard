@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DbN-Z7-rxJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Configuration-->
+        <scene sceneID="2jW-aQ-Nrm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DbN-Z7-rxJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Configuration" image="Configuration" id="gbq-zO-2t5"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO">
+                        <color key="barTintColor" name="HeaderColor"/>
+                    </simulatedNavigationBarMetrics>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="LZr-AH-xsv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="HeaderColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TextPrimaryColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bzm-TT-5Ey" kind="relationship" relationship="rootViewController" id="zHF-nP-dhX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T93-Xl-tpe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="1419.6428571428571"/>
+        </scene>
+        <!--Configuration-->
+        <scene sceneID="dCP-BG-B6V">
+            <objects>
+                <tableViewController storyboardIdentifier="UITableViewController-xfx-rs-Waj" id="bzm-TT-5Ey" customClass="ConfigurationViewController" customModule="AllNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Mn3-fY-4L4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="TableBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="General" id="cYr-A2-gf6">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="cAh-o6-Feb">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cAh-o6-Feb" id="oGl-WM-VXV">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dko-ct-eFM">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="50"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="LQ3-zv-8L0">
+                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebb-ZV-k5g">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                    <color key="textColor" name="TextPrimaryColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="english" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqB-RQ-8fn">
+                                                                    <rect key="frame" x="314" y="0.0" width="41" height="50"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                    <color key="textColor" name="TextPrimaryMutedColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="LQ3-zv-8L0" firstAttribute="top" secondItem="dko-ct-eFM" secondAttribute="top" id="74Y-m9-3xA"/>
+                                                        <constraint firstItem="LQ3-zv-8L0" firstAttribute="leading" secondItem="dko-ct-eFM" secondAttribute="leading" id="UcW-9s-htb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="LQ3-zv-8L0" secondAttribute="bottom" id="a32-yL-qz7"/>
+                                                        <constraint firstAttribute="trailing" secondItem="LQ3-zv-8L0" secondAttribute="trailing" id="bvq-MG-ZuM"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dko-ct-eFM" firstAttribute="top" secondItem="oGl-WM-VXV" secondAttribute="top" id="71Y-UV-Wfk"/>
+                                                <constraint firstItem="dko-ct-eFM" firstAttribute="leading" secondItem="oGl-WM-VXV" secondAttribute="leadingMargin" id="FhZ-Bv-f9L"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dko-ct-eFM" secondAttribute="trailing" id="vgc-U6-a5O"/>
+                                                <constraint firstAttribute="bottom" secondItem="dko-ct-eFM" secondAttribute="bottom" id="wwf-On-6sQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="bzm-TT-5Ey" id="mkq-0M-Ws2"/>
+                            <outlet property="delegate" destination="bzm-TT-5Ey" id="glG-20-vRH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Configuration" id="vCe-af-53T"/>
+                    <connections>
+                        <outlet property="selectedLanguageLabel" destination="JqB-RQ-8fn" id="DKz-Ps-ZAy"/>
+                        <segue destination="JyP-sz-DC4" kind="show" identifier="toLanguageSelection" id="Hoz-po-V3D"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l9A-St-fTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336" y="1420"/>
+        </scene>
+        <!--Languages-->
+        <scene sceneID="Z1g-C3-tX7">
+            <objects>
+                <tableViewController id="JyP-sz-DC4" customClass="LanguageSelectionTableViewController" customModule="AllNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1uE-5X-yCn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="TableBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="JyP-sz-DC4" id="7Fk-bP-YLy"/>
+                            <outlet property="delegate" destination="JyP-sz-DC4" id="mdf-BO-bBj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Languages" id="w93-as-hes"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tY2-H0-5HU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2596" y="1275"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Configuration" width="29" height="29"/>
+        <namedColor name="HeaderColor">
+            <color red="0.91399997472763062" green="0.9179999828338623" blue="0.92500001192092896" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="HeaderColor">
+            <color red="0.91399997472763062" green="0.9179999828338623" blue="0.92500001192092896" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TableBackgroundColor">
+            <color red="0.91399997472763062" green="0.9179999828338623" blue="0.92500001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimaryColor">
+            <color red="0.24300000071525574" green="0.24300000071525574" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimaryMutedColor">
+            <color red="0.24300000071525574" green="0.24300000071525574" blue="0.23499999940395355" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
