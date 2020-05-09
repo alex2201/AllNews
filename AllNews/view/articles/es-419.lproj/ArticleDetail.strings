@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "2EB-63-VsY"; */
+"2EB-63-VsY.text" = "Date";
+
+/* Class = "UIButton"; normalTitle = "Remove from favorites"; ObjectID = "6bh-vI-ApU"; */
+"6bh-vI-ApU.normalTitle" = "Eliminar de favoritos";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "CQy-GT-PVR"; */
+"CQy-GT-PVR.text" = "Title";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "FW6-Qr-es0"; */
+"FW6-Qr-es0.text" = "Description";
+
+/* Class = "UILabel"; text = "Source"; ObjectID = "NwA-hh-edZ"; */
+"NwA-hh-edZ.text" = "Source";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "V06-YI-l2O"; */
+"V06-YI-l2O.normalTitle" = "Listo";
+
+/* Class = "UIButton"; normalTitle = "Go to article"; ObjectID = "ZvJ-ue-8ZS"; */
+"ZvJ-ue-8ZS.normalTitle" = "Ir al artículo";
+
+/* Class = "UILabel"; text = "Content"; ObjectID = "jEX-of-dEX"; */
+"jEX-of-dEX.text" = "Content";
+
+/* Class = "UIButton"; normalTitle = "Add to favorites"; ObjectID = "qX0-KZ-3zo"; */
+"qX0-KZ-3zo.normalTitle" = "Añadir a favoritos";
+
+/* Class = "UILabel"; text = "Author"; ObjectID = "tpE-xJ-EuN"; */
+"tpE-xJ-EuN.text" = "Author";
+
+/* Class = "UINavigationItem"; title = "Article"; ObjectID = "weR-jf-b4u"; */
+"weR-jf-b4u.title" = "Article";

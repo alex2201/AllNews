@@ -105,6 +105,9 @@ class ArticleDetailViewController: UIViewController {
         let vc = SFSafariViewController(url: url)
         present(vc, animated: true, completion: nil)
     }
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func addToFavoritePressed(_ sender: Any) {
         let articleModel = ArticleModel()
