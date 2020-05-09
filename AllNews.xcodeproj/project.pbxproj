@@ -219,9 +219,9 @@
 		FAD9629B2442E72100F1D5C6 /* AllNews */ = {
 			isa = PBXGroup;
 			children = (
+				FA675DC22464A718004BF956 /* AllNews.entitlements */,
 				FAACD848246678F2008EDF71 /* .gitignore */,
 				FAACD84724667873008EDF71 /* private */,
-				FA675DC22464A718004BF956 /* AllNews.entitlements */,
 				FA532B6D244BCFDE006CB546 /* Cache.swift */,
 				FA527543244B5D3600130E55 /* extension */,
 				FAD962B62442E75A00F1D5C6 /* controller */,

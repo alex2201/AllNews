@@ -8,7 +8,7 @@ import Foundation
 // MARK: - API
 struct NewsAPI {
     // MARK: - Private properties
-    private static let key = Private.apiKey
+    private static let key = PrivateData.apiKey
     
     // MARK: - Public properties
     enum Endpoint: String {
