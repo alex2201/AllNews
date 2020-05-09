@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Private {
+struct PrivateData {
     static let apiKey = "52f0a5b963134a159099ba74c8dba957"
 }

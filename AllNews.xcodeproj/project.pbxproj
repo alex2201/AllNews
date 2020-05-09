@@ -14,7 +14,7 @@
 		FA527545244B5D4400130E55 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA527544244B5D4400130E55 /* UIImageView.swift */; };
 		FA532B6E244BCFDE006CB546 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA532B6D244BCFDE006CB546 /* Cache.swift */; };
 		FA582E1E2464E20500F7E4CB /* AccessoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA582E202464E20500F7E4CB /* AccessoryTableViewCell.xib */; };
-		FA582E232464F08000F7E4CB /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA582E222464F08000F7E4CB /* Private.swift */; };
+		FA582E232464F08000F7E4CB /* PrivateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA582E222464F08000F7E4CB /* PrivateData.swift */; };
 		FA5CD38F24631EBC006908A8 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5CD38E24631EBC006908A8 /* Article.swift */; };
 		FA62B21D245643F800C0784F /* SourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62B21C245643F800C0784F /* SourceModel.swift */; };
 		FA6343A224461A1E0040B2FC /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6343A124461A1E0040B2FC /* ArticleViewModel.swift */; };
@@ -24,6 +24,7 @@
 		FA9CA6D92450D19700836B78 /* SourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9CA6D82450D19700836B78 /* SourcesTableViewController.swift */; };
 		FA9CA6DD2450D21100836B78 /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9CA6DB2450D21100836B78 /* SourceTableViewCell.swift */; };
 		FA9CA6DE2450D21100836B78 /* SourceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9CA6DC2450D21100836B78 /* SourceTableViewCell.xib */; };
+		FAACD849246678F2008EDF71 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FAACD848246678F2008EDF71 /* .gitignore */; };
 		FABAC702244D27BD00B2A9D2 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAC701244D27BD00B2A9D2 /* UserSettings.swift */; };
 		FAC41123244A73C900355C18 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC41121244A73C900355C18 /* ArticleTableViewCell.swift */; };
 		FAC41124244A73C900355C18 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC41122244A73C900355C18 /* ArticleTableViewCell.xib */; };
@@ -55,7 +56,7 @@
 		FA582E1D2464E18800F7E4CB /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "es-419"; path = "AllNews/view/es-419.lproj/Configuration.storyboard"; sourceTree = "<group>"; };
 		FA582E1F2464E20500F7E4CB /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "es-419"; path = "es-419.lproj/AccessoryTableViewCell.xib"; sourceTree = "<group>"; };
 		FA582E212464E20C00F7E4CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AccessoryTableViewCell.xib; sourceTree = "<group>"; };
-		FA582E222464F08000F7E4CB /* Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
+		FA582E222464F08000F7E4CB /* PrivateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateData.swift; sourceTree = "<group>"; };
 		FA5CD38E24631EBC006908A8 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		FA62B21C245643F800C0784F /* SourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModel.swift; sourceTree = "<group>"; };
 		FA6343A124461A1E0040B2FC /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		FA9CA6D82450D19700836B78 /* SourcesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesTableViewController.swift; sourceTree = "<group>"; };
 		FA9CA6DB2450D21100836B78 /* SourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
 		FA9CA6DC2450D21100836B78 /* SourceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SourceTableViewCell.xib; sourceTree = "<group>"; };
+		FAACD848246678F2008EDF71 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FABAC701244D27BD00B2A9D2 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		FAC41121244A73C900355C18 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		FAC41122244A73C900355C18 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
@@ -172,6 +174,14 @@
 			path = SourcesTableViewCell;
 			sourceTree = "<group>";
 		};
+		FAACD84724667873008EDF71 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				FA582E222464F08000F7E4CB /* PrivateData.swift */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
 		FAD094572445672E00DBDAC1 /* ArticleTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +203,7 @@
 		FAD962902442E72100F1D5C6 = {
 			isa = PBXGroup;
 			children = (
+				FAACD848246678F2008EDF71 /* .gitignore */,
 				FAD9629B2442E72100F1D5C6 /* AllNews */,
 				FAD9629A2442E72100F1D5C6 /* Products */,
 			);
@@ -209,9 +220,9 @@
 		FAD9629B2442E72100F1D5C6 /* AllNews */ = {
 			isa = PBXGroup;
 			children = (
+				FAACD84724667873008EDF71 /* private */,
 				FA675DC22464A718004BF956 /* AllNews.entitlements */,
 				FA532B6D244BCFDE006CB546 /* Cache.swift */,
-				FA582E222464F08000F7E4CB /* Private.swift */,
 				FA527543244B5D3600130E55 /* extension */,
 				FAD962B62442E75A00F1D5C6 /* controller */,
 				FAD962B52442E75100F1D5C6 /* model */,
@@ -338,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAACD849246678F2008EDF71 /* .gitignore in Resources */,
 				FAC41124244A73C900355C18 /* ArticleTableViewCell.xib in Resources */,
 				FA582E1E2464E20500F7E4CB /* AccessoryTableViewCell.xib in Resources */,
 				FAD962C12443683F00F1D5C6 /* Main.storyboard in Resources */,
@@ -358,7 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD9629D2442E72100F1D5C6 /* AppDelegate.swift in Sources */,
-				FA582E232464F08000F7E4CB /* Private.swift in Sources */,
+				FA582E232464F08000F7E4CB /* PrivateData.swift in Sources */,
 				FA08F04D245FE8E6001517AE /* LanguageSelectionTableViewController.swift in Sources */,
 				FABAC702244D27BD00B2A9D2 /* UserSettings.swift in Sources */,
 				FA9589ED2461554A00676ABF /* URL.swift in Sources */,
