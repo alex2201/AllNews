@@ -203,7 +203,6 @@
 		FAD962902442E72100F1D5C6 = {
 			isa = PBXGroup;
 			children = (
-				FAACD848246678F2008EDF71 /* .gitignore */,
 				FAD9629B2442E72100F1D5C6 /* AllNews */,
 				FAD9629A2442E72100F1D5C6 /* Products */,
 			);
@@ -220,6 +219,7 @@
 		FAD9629B2442E72100F1D5C6 /* AllNews */ = {
 			isa = PBXGroup;
 			children = (
+				FAACD848246678F2008EDF71 /* .gitignore */,
 				FAACD84724667873008EDF71 /* private */,
 				FA675DC22464A718004BF956 /* AllNews.entitlements */,
 				FA532B6D244BCFDE006CB546 /* Cache.swift */,
