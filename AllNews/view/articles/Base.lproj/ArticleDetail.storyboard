@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFQ-w6-GNP" userLabel="Top Button View">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIy-qt-dzY" userLabel="Spacer">
-                                        <rect key="frame" x="0.0" y="0.0" width="318" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="50"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V06-YI-l2O">
-                                        <rect key="frame" x="318" y="16" width="41" height="14"/>
+                                        <rect key="frame" x="318" y="8.5" width="41" height="33"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <state key="normal" title="Done">
                                             <color key="titleColor" name="ButtonTextSecondaryColor"/>
@@ -36,19 +36,18 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="gIy-qt-dzY" secondAttribute="bottom" id="5Ys-Y8-5Da"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="V06-YI-l2O" secondAttribute="trailing" constant="8" id="8df-gO-rBC"/>
-                                    <constraint firstAttribute="bottom" secondItem="V06-YI-l2O" secondAttribute="bottom" id="HeF-63-R3y"/>
-                                    <constraint firstItem="V06-YI-l2O" firstAttribute="top" secondItem="RFQ-w6-GNP" secondAttribute="topMargin" constant="8" id="T3w-7W-f5l"/>
+                                    <constraint firstItem="V06-YI-l2O" firstAttribute="centerY" secondItem="RFQ-w6-GNP" secondAttribute="centerY" id="Srp-n5-1OT"/>
                                     <constraint firstItem="V06-YI-l2O" firstAttribute="leading" secondItem="gIy-qt-dzY" secondAttribute="trailing" id="ZXa-rc-54i"/>
-                                    <constraint firstAttribute="height" constant="30" id="mRs-Un-DLD"/>
+                                    <constraint firstAttribute="height" constant="50" id="mRs-Un-DLD"/>
                                     <constraint firstItem="gIy-qt-dzY" firstAttribute="leading" secondItem="RFQ-w6-GNP" secondAttribute="leading" id="oYp-A9-T0J"/>
                                     <constraint firstItem="gIy-qt-dzY" firstAttribute="top" secondItem="RFQ-w6-GNP" secondAttribute="top" id="ogg-Ez-nRf"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2m-MT-xRr">
-                                <rect key="frame" x="0.0" y="34" width="375" height="513"/>
+                                <rect key="frame" x="0.0" y="54" width="375" height="493"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGH-bB-Qvd">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="513"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="493"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIz-Ub-hF4" userLabel="ArticleContentView">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="201.5"/>

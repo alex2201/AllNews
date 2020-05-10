@@ -1,0 +1,12 @@
+
+/* Class = "UISearchBar"; placeholder = "Search articles"; ObjectID = "1ae-9W-on0"; */
+"1ae-9W-on0.placeholder" = "Buscar artículos";
+
+/* Class = "UIBarButtonItem"; title = "Refresh"; ObjectID = "WRX-2Q-dqD"; */
+"WRX-2Q-dqD.title" = "Reacargar";
+
+/* Class = "UINavigationItem"; title = "Favourites"; ObjectID = "bTJ-za-VTG"; */
+"bTJ-za-VTG.title" = "Favoritos";
+
+/* Class = "UITabBarItem"; title = "Favorites"; ObjectID = "zRA-Nh-FQK"; */
+"zRA-Nh-FQK.title" = "Favoritos";

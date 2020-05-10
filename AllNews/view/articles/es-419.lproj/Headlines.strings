@@ -1,0 +1,12 @@
+
+/* Class = "UINavigationItem"; title = "Titulares"; ObjectID = "LJU-cK-JDP"; */
+"LJU-cK-JDP.title" = "Titulares";
+
+/* Class = "UIBarButtonItem"; title = "Recargar"; ObjectID = "Rgx-PD-FUq"; */
+"Rgx-PD-FUq.title" = "Recargar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar artículos"; ObjectID = "k2G-Ue-8Id"; */
+"k2G-Ue-8Id.placeholder" = "Buscar artículos";
+
+/* Class = "UITabBarItem"; title = "Headlines"; ObjectID = "uqM-gs-pU3"; */
+"uqM-gs-pU3.title" = "Headlines";

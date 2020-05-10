@@ -9,6 +9,8 @@
 import UIKit
 
 class FavouritesTableViewController: UITableViewController {
+    // MARK: - Outlets
+    @IBOutlet weak var articleSearchBar: UISearchBar!
     
     // MARK: - Private properties
     private var viewModel = ArticleViewModel()
@@ -26,6 +28,7 @@ class FavouritesTableViewController: UITableViewController {
         super.viewDidLoad()
         setupViewModel()
         setupTableView()
+        articleSearchBar.delegate = self
     }
     
     private func handleLoading() {
@@ -45,11 +48,15 @@ class FavouritesTableViewController: UITableViewController {
         self.tableView.reloadRows(at: [indexPath], with: .fade)
     }
     
-    // MARK: - IBActions
-    @IBAction func refreshButtonPressed(_ sender: Any) {
+    private func resetController() {
         pageIndex = 1
         resetTableView()
         performSearch()
+    }
+    
+    // MARK: - IBActions
+    @IBAction func refreshButtonPressed(_ sender: Any) {
+        resetController()
     }
     
 
@@ -177,8 +184,12 @@ extension FavouritesTableViewController {
         urlComponents?.scheme = "https"
         
         if let url = urlComponents?.url, viewModel.cacheImageKeys.contains(url), let articleImage = viewModel.getArticleImage(from: url) {
-            cell.articleImage.isHidden = false
             cell.articleImage.image = articleImage
+            cell.articleImage.isHidden = false
+            cell.articleImage.alpha = 0
+            UIView.animate(withDuration: 1) {
+                cell.articleImage.alpha = 1
+            }
         } else {
             cell.articleImage.image = nil
             cell.articleImage.isHidden = true
@@ -190,6 +201,34 @@ extension FavouritesTableViewController {
         return cell
     }
 }
+
+// MARK: - SearchBar delegate
+extension FavouritesTableViewController: UISearchBarDelegate {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = nil
+        searchText = ""
+        searchBar.endEditing(true)
+        resetController()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        var text = searchBar.text ?? ""
+        text = text.trimmingCharacters(in: [" "])
+        searchBar.endEditing(true)
+        resetTableView()
+        searchText = text
+        performSearch()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = searchBar.text == nil
+    }
+}
+
 // MARK: - AccessoryTableViewCellDelegate
 extension FavouritesTableViewController: AccessoryTableViewCellDelegate {
     

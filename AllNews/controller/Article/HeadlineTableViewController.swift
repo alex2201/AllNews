@@ -153,8 +153,12 @@ extension HeadlineTableViewController {
         urlComponents?.scheme = "https"
         
         if let url = urlComponents?.url, viewModel.cacheImageKeys.contains(url), let articleImage = viewModel.getArticleImage(from: url) {
-            cell.articleImage.isHidden = false
             cell.articleImage.image = articleImage
+            cell.articleImage.isHidden = false
+            cell.articleImage.alpha = 0
+            UIView.animate(withDuration: 1) {
+                cell.articleImage.alpha = 1
+            }
         } else {
             cell.articleImage.image = nil
             cell.articleImage.isHidden = true

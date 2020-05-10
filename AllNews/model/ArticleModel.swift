@@ -22,7 +22,7 @@ class ArticleModel: ManagedObjectModel {
         context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
     }
     
-    private func getArticlesRequest(searchingFor string: String) -> NSFetchRequest<Article> {
+    private func getArticlesRequest() -> NSFetchRequest<Article> {
         let request: NSFetchRequest<Article> = Article.fetchRequest()
         request.fetchLimit = limit
         request.fetchOffset = offset
@@ -31,7 +31,7 @@ class ArticleModel: ManagedObjectModel {
     }
     
     func getArticles(searchingFor string: String) -> [Article] {
-        let request: NSFetchRequest<Article> = getArticlesRequest(searchingFor: string)
+        let request: NSFetchRequest<Article> = getArticlesRequest()
         var articles: [Article] = []
         do {
             articles = try context.fetch(request)
@@ -45,8 +45,8 @@ class ArticleModel: ManagedObjectModel {
     
     private func articleFilter(_ article: Article, forString string: String) -> Bool {
         return string.isEmpty
-            || article.title!.lowercased().contains(string)
-            || article.content!.lowercased().contains(string)
+            || article.title!.comparable.contains(string.comparable)
+            || article.content!.comparable.contains(string.comparable)
     }
     
     func save(article: APIArticle) {
